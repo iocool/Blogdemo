@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2017-03-20.
- */
 
 module.exports = function(app){
     app.get('/', function(req, res){

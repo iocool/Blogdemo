@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2017-03-15.
- */
 
 module.exports = {
     port: 3000,
