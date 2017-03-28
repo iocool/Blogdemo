@@ -16,12 +16,17 @@ router.post('/', checkLogin, function (req, res, next) {
 });
 
 // GET /posts/create 发表文章页
-router.get('/create', function (req, res, next) {
+router.get('/create', checkLogin, function (req, res, next) {
     res.send(req.flash());
 });
 
 // GET /posts/:postId 单独的一篇文章页
 router.get('/:postId', function (req, res, next) {
+    res.send(req.flash());
+});
+
+// GET /posts/:postId/edit 更新文章页
+router.get('/:postId/edit', checkLogin, function (req, res, next) {
     res.send(req.flash());
 });
 

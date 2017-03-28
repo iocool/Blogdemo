@@ -41,6 +41,6 @@ app.use(flash());
 routes(app);
 
 // 监听端口,启动程序
-app.listen(config.ports, function () {
-    console.log('${pkg.name} listen on port ${config.port}');
+app.listen(config.port, function () {
+    console.log(`${pkg.name} listen on port ${config.port}`);
 });
