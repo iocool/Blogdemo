@@ -39,7 +39,7 @@ app.use(flash());
 
 //处理表单及文件上传
 app.use(require('express-formidable')({
-    uploadDir: path().join(__dirname, 'public/img'),    //上传的文件路径
+    uploadDir: path.join(__dirname, 'public/img'),    //上传的文件路径
     keepExtensions: true    //保留后缀名
 }));
 
@@ -52,8 +52,8 @@ app.locals.blog = {
 // 添加模板必需的三个变量
 app.use(function (req, res, next) {
     res.locals.user = req.session.user;
-    res.locals.success = req.flash('success').toString;
-    res.locals.error = req.flash('error').toString;
+    res.locals.success = req.flash('success').toString();
+    res.locals.error = req.flash('error').toString();
     next();
 });
 
