@@ -11,7 +11,7 @@
     "blog",
     "demo"
   ],
-  "author": "tfzl",
+  "author": "iocool",
   "license": "ISC",
   "dependencies": {
     "config-lite": "^1.5.0",
