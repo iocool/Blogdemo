@@ -1,4 +1,4 @@
-/* ---全局 CSS 样式--- */
+/* ---------- 全局样式 ---------- */
 
 body {
     width: 1100px;
@@ -12,8 +12,8 @@ a:hover {
 }
 
 .button {
-    background-color: #4fc08d!important;
-    color: #fff!important;
+    background-color: #4fc08d !important;
+    color: #fff !important;
 }
 
 .avatar {
@@ -23,7 +23,7 @@ a:hover {
     float: right;
 }
 
-/* --- nav --- */
+/* ---------- nav ---------- */
 
 .nav {
     margin-bottom: 20px;
@@ -37,7 +37,7 @@ a:hover {
     margin: 10px 0;
 }
 
-/* --- nav-setting --- */
+/* ---------- nav-setting ---------- */
 
 .nav-setting {
     position: fixed;
@@ -48,7 +48,7 @@ a:hover {
 
 .nav-setting .ui.dropdown.button {
     padding: 10px 10px 0 10px;
-    background-color: #fff!important;
+    background-color: #fff !important;
 }
 
 .nav-setting .icon.bars {
@@ -56,9 +56,10 @@ a:hover {
     font-size: 18px;
 }
 
-/* --- post-content --- */
+/* ---------- post-content ---------- */
+
 .post-content h3 a {
-    color: #4fc08d!important;
+    color: #4fc08d !important;
 }
 
 .post-content .tag {
