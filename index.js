@@ -60,6 +60,13 @@ app.use(function (req, res, next) {
 // 路由
 routes(app);
 
+// error 页面
+app.use(function (err, req, res, next) {
+  res.render('error', {
+      error: err
+  })
+});
+
 // 监听端口,启动程序
 app.listen(config.port, function () {
     console.log(`${pkg.name} listen on port ${config.port}`);
